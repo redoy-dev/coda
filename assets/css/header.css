@@ -1,0 +1,147 @@
+/*Header Section Start*/
+.header{
+    background-image: url(../images/man-header.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding: 67px 115px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Open Sans", serif;
+}
+
+.menubar span{
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffff;
+    letter-spacing: 1px;
+}
+
+.icon{
+    width: 44px;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    transition: .2s ease-in;
+}
+
+.icon::after, .icon::before{
+    content: "";
+    width: 44px;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    transition: .4s ease-in;
+}
+.icon::after{
+    top: 25px;
+    width: 23px;
+    transform: translate(42%, -50%);
+}
+
+.icon::before{
+    top: 13px;
+    transform: translate(25%, -50%);
+}
+
+.icon-container:hover.icon{
+    background: transparent;
+    box-shadow: none;
+}
+
+.developer{
+    max-width: 50%;
+}
+
+.developer p{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.developer h1{
+    text-transform: capitalize;
+    font-weight: 300;
+    line-height: 0.9;
+    font-family: "Abril Fatface", serif;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 103px;
+}
+
+.developer a{
+    display: inline-block;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-top: 86px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.developer a:hover{
+    background: #4AA4F6;
+}
+
+
+
+/*Media Query*/
+
+@media screen and (max-width: 1024px) {
+    .header{
+        padding: 54px 55px;
+        padding-bottom: 35px;
+    }
+    
+    .developer p{
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .header{
+        padding: 40px 30px;
+    }
+    .developer p {
+        margin-top: 43px;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 4px;
+    }
+    .developer h1{
+        font-weight: 100;
+        margin-top: 8px;
+        font-size: 78px;
+    }
+    .developer a{
+        margin-top: 58px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .header {
+        padding: 40px 19px;
+    }
+    .developer p{
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+    .developer h1{
+        font-size: 71px;
+    }
+    .developer a{
+        font-size: 8px;
+    }
+}

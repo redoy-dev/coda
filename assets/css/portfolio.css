@@ -1,0 +1,272 @@
+.portfolio{
+    position: relative;
+    padding: 150px 110px;
+}
+
+.portfolio-header{
+    line-height: 1.3;
+}
+
+.portfolio-header p{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #272727;
+}
+
+.portfolio-header h2{
+    font-size: 71px;
+    font-family: "Abril Fatface", serif;
+    color: #272727;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+.portfolio-content{
+    margin-top: 60px;
+}
+
+.content-item nav ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.content-item nav ul li a{
+    color: #5d5d5d;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #007bff;
+    color: black;
+}
+
+.content-img{
+  justify-content: space-between;
+  gap: 20px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.portfolio-img {
+   overflow: hidden;
+   flex: 1;
+  margin-bottom: 20px; 
+}
+
+.portfolio-img img {
+  
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-img:hover img {
+  transform: scale(1.05);
+}
+
+.text-overlay {
+  position: absolute;
+  font-family: "Abril Fatface", serif;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  line-height: 1.2;
+  color: white;
+  font-size: 43px;
+}
+
+.text-overlay:hover{
+  background-color: #007bff;
+}
+
+.travel {
+  top: 32%;
+  left: 29%;
+}
+.travel-2 {
+  top: 20%;
+  left: 70%;
+  width: 30%;      
+}
+
+.travel-3{
+  top: 50%;
+  left: 28%;
+}
+
+.travel-4{
+  top: 38%;
+  left: 70%;
+}
+
+.travel-5{
+  top: 64%;
+  left: 28%;
+}
+
+.travel-6{
+  top: 51%;
+  left: 70%;
+}
+
+.travel-7{
+  width: 48%;
+  top: 76%;
+  left: 38%;
+}
+
+.travel-8{
+  top: 80%;
+  left: 70%;
+}
+
+.travel-9{
+  top: 90%;
+  left: 28%;
+}
+
+
+
+/*Media Query*/
+
+@media screen and (max-width: 1280px){
+  .portfolio {
+    padding: 150px 82px;
+}
+}
+
+@media screen and (max-width: 1024px){
+  .portfolio {
+    padding: 125px 48px;
+}
+.portfolio-content {
+  margin-top: 28px;
+}
+.text-overlay{
+  font-size: 38px;
+}
+.content-img{
+  display: block;
+}
+
+.travel {
+  top: 18%;
+  left: 49%;
+}
+.travel-2 {
+  top: 59%;
+  left: 65%;
+  width: 100%;      
+}
+
+.travel-3{
+  top: 28%;
+  left: 50%;
+}
+
+.travel-4{
+  width: 100%;
+  top: 70%;
+  left: 71%;
+}
+
+.travel-5{
+  top: 36%;
+  left: 48%;
+}
+
+.travel-6{
+  width: 100%;
+  top: 78%;
+  left: 77%;
+}
+
+.travel-7{
+  width: 100%;
+  top: 44%;
+  left: 63%;
+}
+
+.travel-8{
+  width: 100%;
+  top: 95%;
+  left: 63%;
+}
+
+.travel-9{
+  top: 52%;
+  left: 48%;
+}
+}
+
+@media screen and (max-width: 575px){
+  .portfolio-header p{
+    font-size: 14px;
+  }
+  .portfolio-header h2 {
+    font-size: 61px;
+  }
+  .content-item nav ul li a {
+    font-size: 16px;
+  }
+  .portfolio {
+    padding: 125px 16px;
+}
+.text-overlay {
+  font-size: 27px;
+}
+}
+
+@media screen and (max-width: 320px){
+  .portfolio {
+    padding: 83px 16px;
+}
+.content-item nav ul {
+  gap: 26px;
+}
+
+.content-item nav ul li a {
+  font-size: 15px;
+}
+.text-overlay {
+  font-size: 16px;
+}
+
+.travel {
+  top: 21%;
+}
+.travel-2 {
+  top: 61%;   
+}
+
+.travel-3{
+  top: 31%;
+}
+
+.travel-4{
+  top: 71%;
+  left: 70%;
+}
+
+.travel-5{
+  top: 39%;
+}
+
+.travel-6{
+  left: 75%;
+}
+
+.travel-7{
+  top: 46%;
+}
+
+.travel-8{
+  top: 94%;
+}
+
+.travel-9{
+  top: 54%;
+}
+}
