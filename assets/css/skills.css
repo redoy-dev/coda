@@ -1,92 +1,137 @@
-.skills{
-    position: relative;
-    padding: 150px 110px;
-    padding-top: 0;
+.skills {
+  position: relative;
+  padding: 150px 110px;
+  padding-top: 0;
 }
 
-.skill-content{
-    border-top: 2px solid #EEEEEE;
-    padding-top: 128px;
+.skill-content {
+  border-top: 2px solid #EEEEEE;
+  padding-top: 128px;
 }
 
-.container-skill{
-    display: flex;
-    padding-top: 78px;
-  }
+.container-skill {
+  display: flex;
+  padding-top: 78px;
+}
   
   
-  .skill-bar {
-    padding-right: 91px;
-    width: 50%;
-    border-right: 2px solid #e0e0e0;
-  }
+.skill-bar {
+  padding-right: 91px;
+  width: 50%;
+  border-right: 2px solid #e0e0e0;
+}
   
-  .skill {
-    display: flex;
-    align-items: center;
-    margin-bottom: 54px;
-  }
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 54px;
+}
 
-  .skill:last-child{
-    margin-bottom: 0;
-  }
+.skill:last-child {
+  margin-bottom: 0;
+}
   
+.skill-name {
+  width: 100px;
+  font-size: 14px;
+}
+  
+.bar {
+  flex: 1;
+  height: 2px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 10px;
+  position: relative;
+}
+  
+.fill {
+  height: 100%;
+  background: #007bff;
+  border-radius: 5px 0 0 5px;
+  transition: width 0.3s ease-in-out;
+}
+  
+.fill.html {
+  width: 90%;
+ }
+  
+.fill.css {
+  width: 95%;
+}
+  
+.fill.js {
+  width: 70%;
+}
+  
+.fill.ui-design {
+  width: 50%;
+}
+  
+.percentage {
+  font-size: 14px;
+}
+  
+.tags {
+  width: 50%;
+  padding-left: 95px;
+  gap: 10px;
+}
+  
+.tag {
+  line-height: 4.7;
+  margin: 9px;
+  border: 1px solid #e0e0e0;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 1024px) {
+  .skills {
+    padding: 150px 47px;
+}
+}
+
+@media screen and (max-width: 768px) {
   .skill-name {
-    width: 100px;
-    font-size: 14px;
+    width: 66px;
   }
-  
-  .bar {
-    flex: 1;
-    height: 2px;
-    background: #e0e0e0;
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 0 10px;
-    position: relative;
-  }
-  
-  .fill {
-    height: 100%;
-    background: #007bff;
-    border-radius: 5px 0 0 5px;
-    transition: width 0.3s ease-in-out;
-  }
-  
-  .fill.html {
-    width: 90%;
-  }
-  
-  .fill.css {
-    width: 95%;
-  }
-  
-  .fill.js {
-    width: 70%;
-  }
-  
-  .fill.ui-design {
-    width: 50%;
-  }
-  
-  .percentage {
-    font-size: 14px;
-  }
-  
-  .tags {
-    width: 50%;
-    padding-left: 95px;
-    gap: 10px;
-  }
-  
+
   .tag {
-    line-height: 4.7;
-    margin: 9px;
-    border: 1px solid #e0e0e0;
-    padding: 8px 12px;
-    font-size: 14px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-transform: capitalize;
+    line-height: 3.7;
   }
+}
+
+@media screen and (max-width: 575px) {
+  .skills {
+    padding: 150px 17px;
+}
+
+  .skill-content {
+    padding-top: 108px;
+}
+
+.container-skill {
+   display: flex;
+}
+
+.skill-bar {
+  width: 100%;
+}
+
+.tags {
+  text-align: center;
+  padding-top: 51px;
+  width: 100%;
+}
+
+.tag {
+  line-height: 4.7;
+}
+
+}
   

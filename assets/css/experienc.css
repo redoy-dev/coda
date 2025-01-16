@@ -1,62 +1,63 @@
-.experience{
+.experience {
     position: relative;
     padding: 150px 110px;
     padding-top: 0;
 }
 
-.ex-content{
+.ex-content {
     border-top: 2px solid #EEEEEE;
     padding-top: 128px;
 }
 
-.ex-header{
+.ex-header {
     line-height: 1.3;
 }
 
-.ex-header p{
+.ex-header p {
     color: #272727;
     font-size: 17px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.ex-header h2{
+.ex-header h2 {
     font-size: 68px;
     font-family: "Abril Fatface", serif;
     color: #272727;
     font-weight: 100;
 }
 
-.tab{
+.tab {
     margin-top: 36px;
 }
 
-.tab-footer{
+.tab-footer {
     display: flex;
     gap: 208px;
 }
 
-.tab nav ul{
+.tab nav ul {
     display: flex;
     list-style: none;
     gap: 49px;
 }
-.tab nav ul li a{
+
+.tab nav ul li a {
     color: #EEEEEE;
     font-size: 17px;
     font-weight: 500;
     color: #272727;
 }
 
-.tab-left{
+.tab-left {
     width: 50%;
 }
 
-.timeline{
+.timeline {
     display: block;
 }
 
-.timeline::before{
+.timeline::before {
     content: '';
     display: block;
     position: absolute;
@@ -67,7 +68,7 @@
     left: 116px;
 }
 
-.timeline-lebel{
+.timeline-lebel {
     font-size: 14px;
     letter-spacing: 1px;
     position: absolute;
@@ -76,14 +77,14 @@
     top: 55%;
 }
 
-.timeline-caption{
+.timeline-caption {
     left: 31px;
     top: 53px;
     position: relative;
     margin: 0 0 32px;
 }
 
-.timeline-caption::before{
+.timeline-caption::before {
     content: '';
     display: block;
     position: absolute;
@@ -93,7 +94,7 @@
     left: -31px;
 }
 
-.time-interval{
+.time-interval {
     color: #4aa8fa;
     font-family: "Abril Fatface", serif;
     font-size: 14px;
@@ -101,14 +102,14 @@
     line-height: 0;
 }
 
-.time-underscore{
+.time-underscore {
     font-family: "Abril Fatface", serif;
     font-size: 43px;
     letter-spacing: 3px;
     font-weight: 100;
 }
 
-.tab-right{
+.tab-right {
     width: 50%;
 }
 
@@ -116,20 +117,91 @@
 
 /*Media Query*/
 
-@media screen and (max-width: 1280px){
-    .experience{
+@media screen and (max-width: 1280px) {
+    .experience {
         padding: 150px 82px;
     }
 
-    .timeline-lebel{
+    .timeline-lebel {
         left: 44px;
         top: 61%;
     }
 
-    .timeline::before{
+    .timeline::before {
         left: 95px;
         top: 51%;
         height: 21%;
     }
 
+}
+
+@media screen and (max-width: 1024px) {
+    .experience {
+        padding: 150px 60px;
+    }
+
+    .timeline::before {
+        left: 74px;
+        top: 46%;
+    }
+
+    .timeline-lebel {
+        left: 24px;
+        top: 55%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .under-detail{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .experience {
+        padding: 0px 17px;
+        padding-bottom: 81px;
+    }
+
+    .ex-header p {
+        font-size: 14px;
+    }
+
+    .ex-header h2 {
+        font-size: 54px;
+    }
+
+    .tab-footer {
+        display: block;
+    }
+
+    .tab-left {
+        width: 100%
+    }
+
+    .timeline::before {
+        left: 39px;
+        top: 35%;
+    }
+
+    .timeline-lebel {
+        left: -5px;
+        top: 46%;
+    }
+
+    .tab-right{
+        width: 100%;
+        padding-top: 102px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .timeline::before {
+        top: 30%;
+        height: 18%;
+    }
+
+    .timeline-lebel {
+        top: 39%;
+    }
 }
