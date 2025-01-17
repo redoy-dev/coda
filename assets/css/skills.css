@@ -93,7 +93,7 @@
 @media screen and (max-width: 1024px) {
   .skills {
     padding: 150px 47px;
-}
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -109,29 +109,32 @@
 @media screen and (max-width: 575px) {
   .skills {
     padding: 150px 17px;
-}
+ }
 
   .skill-content {
     padding-top: 108px;
-}
+ }
 
 .container-skill {
-   display: flex;
-}
+  display: block;
+ }
 
 .skill-bar {
   width: 100%;
-}
+  padding-right: 0;
+  border-right: none;
+ }
 
 .tags {
   text-align: center;
   padding-top: 51px;
   width: 100%;
-}
+  padding-left: 0;
+ }
 
 .tag {
   line-height: 4.7;
-}
+ }
 
 }
   

@@ -1,18 +1,17 @@
-footer{
-    display: none;
+footer {
     background: #272727;
     padding: 51px 138px;
 }
 
-.div-footer{
+.div-footer {
     display: flex;
 }
 
-.copyright{
+.copyright {
     width: 50%;
 }
 
-.copyright p{
+.copyright p {
     font-size: 12px;
     letter-spacing: 2.1px;
     color: #5d5d5d;
@@ -20,9 +19,69 @@ footer{
     margin-top: 37px;
 }
 
-.copyright-name h4{
+.copyright-name h4 {
     font-family: "Abril Fatface", serif;
     font-size: 48px;
     font-weight: 100;
     color: #fff;
+}
+
+
+@media screen and (max-width: 1024px) {
+    footer {
+        background: #272727;
+        padding: 51px 81px;
+    }
+
+    .copyright-name {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .copyright-name h4 {
+        line-height: 1;
+    }
+
+    footer {
+        padding: 51px 46px;
+    }
+
+    .copyright-name {
+        padding-left: 93px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .div-footer {
+        display: block;
+    }
+
+    .copyright-name {
+        padding-top: 19px;
+        padding-left: 0;
+    }
+
+    .copyright p {
+        margin-top: 22px;
+    }
+
+    .copyright-name h4 {
+        line-height: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    footer {
+        padding: 51px 15px;
+    }
+
+    .copyright p {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .copyright-name h4  {
+        font-size: 36px;
+    }
 }
