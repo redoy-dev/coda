@@ -1,5 +1,4 @@
-/*Header Section Start*/
-.header{
+.header {
     background-image: url(../images/man-header.jpg);
     background-size: cover;
     background-position: top;
@@ -7,26 +6,26 @@
     padding: 67px 115px;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     font-size: 25px;
     color: #fff;
     font-weight: 500;
     font-family: "Open Sans", serif;
 }
 
-.menubar span{
+.menubar span {
     font-size: 15px;
     font-weight: 500;
     color: #ffff;
     letter-spacing: 1px;
 }
 
-.icon{
+.icon {
     width: 44px;
     height: 2px;
     position: absolute;
@@ -34,7 +33,7 @@
     transition: .2s ease-in;
 }
 
-.icon::after, .icon::before{
+.icon::after, .icon::before {
     content: "";
     width: 44px;
     height: 2px;
@@ -42,27 +41,28 @@
     background: #fff;
     transition: .4s ease-in;
 }
-.icon::after{
+
+.icon::after {
     top: 25px;
     width: 23px;
     transform: translate(42%, -50%);
 }
 
-.icon::before{
+.icon::before {
     top: 13px;
     transform: translate(25%, -50%);
 }
 
-.icon-container:hover.icon{
+.icon-container:hover.icon {
     background: transparent;
     box-shadow: none;
 }
 
-.developer{
+.developer {
     max-width: 50%;
 }
 
-.developer p{
+.developer p {
     margin-top: 30px;
     color: #fff;
     font-size: 18px;
@@ -70,7 +70,7 @@
     letter-spacing: 5px;
 }
 
-.developer h1{
+.developer h1 {
     text-transform: capitalize;
     font-weight: 300;
     line-height: 0.9;
@@ -80,7 +80,7 @@
     font-size: 103px;
 }
 
-.developer a{
+.developer a {
     display: inline-block;
     letter-spacing: 1px;
     color: #fff;
@@ -90,27 +90,25 @@
     font-size: 13px;
 }
 
-.developer a:hover{
+.developer a:hover {
     background: #4AA4F6;
 }
 
 
 
-/*Media Query*/
-
 @media screen and (max-width: 1024px) {
-    .header{
+    .header {
         padding: 54px 55px;
         padding-bottom: 35px;
     }
     
-    .developer p{
+    .developer p {
         margin-top: 5px;
     }
 }
 
-@media screen and (max-width: 575px){
-    .header{
+@media screen and (max-width: 575px) {
+    .header {
         padding: 40px 30px;
     }
     .developer p {
@@ -119,29 +117,29 @@
         font-weight: 500;
         letter-spacing: 4px;
     }
-    .developer h1{
+    .developer h1 {
         font-weight: 100;
         margin-top: 8px;
         font-size: 78px;
     }
-    .developer a{
+    .developer a {
         margin-top: 58px;
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
     .header {
         padding: 40px 19px;
     }
-    .developer p{
+    .developer p {
         font-size: 12px;
         font-weight: 500;
         letter-spacing: 3px;
     }
-    .developer h1{
+    .developer h1 {
         font-size: 71px;
     }
-    .developer a{
+    .developer a {
         font-size: 8px;
     }
 }
